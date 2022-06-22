@@ -1,3 +1,7 @@
+# Requisitos
+
+É necessário que o GIT o NodeJS estejam instalados na máquina.
+
 # Instalação
 
     git clone https://github.com/agsx30/trataxml.git
