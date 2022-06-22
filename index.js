@@ -8,7 +8,7 @@ console.log(files);
 
 files.forEach(file => { 
 
-  let texto = fs.readFileSync('./origem/' + file, { encoding: 'utf8' });
+  let texto = fs.readFileSync('./origem/' + file, { encoding: 'latin1' });
   let posic = 0;
   let cont = 0;
 
@@ -33,7 +33,7 @@ files.forEach(file => {
   } while ( posic >= 0 && cont < 1000 )
 
   
-  fs.writeFileSync('./destino/' + file, texto, { encoding: 'utf8' });
+  fs.writeFileSync('./destino/' + file, texto, { encoding: 'latin1' });
 
   console.log("Convertido arquivo: ./destino/" + file);
 
